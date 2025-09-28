@@ -1,0 +1,141 @@
+/*------------------------------------*/
+/* RESET & GLOBAL STYLES */
+/*------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.line-break {
+  display: block;
+  margin: 0.2rem 0; /* khoảng cách nhỏ <br> */
+}
+
+/*------------------------------------*/
+/* BODY & BASE STYLES */
+/*------------------------------------*/
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; /* căn giữa container theo ngang */
+  align-items: flex-start; /* khối nội dung ở trên cùng */
+  padding-top: 1rem;
+
+  /* chống copy/select */
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+h1 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-weight: normal;
+  letter-spacing: normal;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: #ff6600;
+  letter-spacing: normal;
+}
+
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  transition: color 0.3s;
+}
+
+.links a {
+  display: block;        /* mỗi a nằm 1 dòng */
+  font-size: 1.1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #ff6600;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: none;
+}
+
+
+
+
+/*------------------------------------*/
+/* HIGHLIGHT TEXT */
+.highlight {
+  color: #ff6600;
+  font-weight: normal;
+}
+
+/*------------------------------------*/
+/* CONTAINER */
+.container {
+  position: relative;       /* để social-links căn theo container */
+  max-width: 100px;         /* nhỏ lại như cũ */
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  padding-top: 1rem;
+}
+
+/*------------------------------------*/
+/* RESPONSIVE MOBILE */
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 1rem;
+    padding-top: 0.5rem;
+  }
+
+/*------------------------------------*/
+/* SOCIAL LINKS */
+.social-links {
+  position: absolute;
+  right: 15px;
+  top: 1rem; /* bắt đầu từ trên cùng container */
+  display: flex;
+  gap: 0.5rem; /* khoảng cách giữa các icon*/
+  align-items: center; /* căn thẳng theo chiều dọc icon */
+}
+
+.social-links img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s, filter 0.3s;
+  cursor: pointer;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 5px #ff6600);
+}
