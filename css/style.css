@@ -47,8 +47,8 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    top: 100%;      /* ngay dưới button cha */
-    left: 0;         /* căn trái với button */
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #000;
     min-width: 160px;
     border: none;
