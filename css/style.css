@@ -13,6 +13,52 @@
 }
 
 /*------------------------------------*/
+/* menu dropdown */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropbtn {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropbtn:hover {
+    background-color: #222;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    border: none;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #333;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/*------------------------------------*/
 /* BODY & BASE STYLES */
 /*------------------------------------*/
 body {
@@ -101,7 +147,7 @@ p {
 /* CONTAINER */
 .container {
   position: relative;       /* để social-links căn theo container */
-  max-width: 1200px;         /* nhỏ lại như cũ */
+  max-width: 1000px;         /* nhỏ lại như cũ */
   width: 100%;
   margin: 0 auto;
   padding: 1rem;
