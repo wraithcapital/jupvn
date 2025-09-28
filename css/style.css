@@ -70,7 +70,7 @@ body {
   justify-content: center; /* căn giữa container theo ngang */
   align-items: flex-start; /* khối nội dung ở trên cùng */
   padding-top: 1rem;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.5px; !important;
 
   /* chống copy/select */
   user-select: none;
