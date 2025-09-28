@@ -25,7 +25,6 @@
     color: white;
     padding: 10px 20px;
     font-size: 16px;
-    font-family: 'Oswald', sans-serif;
     border: none;
     cursor: pointer;
   }
@@ -64,7 +63,7 @@
 body {
   background: #000;
   color: #fff;
-  font-family: "GitHub Mono", Menlo, Consolas, "Courier New", monospace;
+  font-family: 'Fira Code', 'GitHub Mono', Menlo, Consolas, 'Courier New', monospace;
   min-height: 100vh;
   display: flex;
   justify-content: center; /* căn giữa container theo ngang */
