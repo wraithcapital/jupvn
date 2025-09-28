@@ -21,7 +21,7 @@
   }
 
  .dropbtn {
-    font-family: 'Fira Code', 'GitHub Mono', Menlo, Consolas, 'Courier New', monospace;
+    font-family: inherit; /* kế thừa từ body */
     background-color: #000;
     color: white;
     padding: 10px 20px;
