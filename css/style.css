@@ -15,12 +15,12 @@
 /*------------------------------------*/
 /* menu dropdown */
 
-.dropdown {
+ .dropdown {
     position: relative;
     display: inline-block;
   }
 
-  .dropbtn {
+ .dropbtn {
     background-color: #000;
     color: white;
     padding: 10px 20px;
@@ -152,7 +152,7 @@ p {
   width: 100%;
   margin: 0 auto;
   padding: 1rem;
-  padding-top: 1rem;
+  padding-top: 5rem;
 }
 
 /*------------------------------------*/
