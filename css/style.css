@@ -101,7 +101,7 @@ p {
 /* CONTAINER */
 .container {
   position: relative;       /* để social-links căn theo container */
-  max-width: 100px;         /* nhỏ lại như cũ */
+  max-width: 1200px;         /* nhỏ lại như cũ */
   width: 100%;
   margin: 0 auto;
   padding: 1rem;
