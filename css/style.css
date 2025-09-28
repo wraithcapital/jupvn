@@ -64,7 +64,7 @@
 body {
   background: #000;
   color: #fff;
-  font-family: 'Fira Code', 'GitHub Mono', Menlo, Consolas, 'Courier New', monospace;
+  font-family: 'Monaspace Neon', monospace;
   min-height: 100vh;
   display: flex;
   justify-content: center; /* căn giữa container theo ngang */
