@@ -13,6 +13,16 @@
 }
 
 /*------------------------------------*/
+
+/* Thanh menu ngang */
+.navbar {
+  background-color: #ccc; /* nền xám nhạt */
+  display: flex;          /* các menu cha nằm ngang */
+  justify-content: center; /* căn giữa toàn bộ thanh */
+  padding: 0.5rem 1rem;
+  gap: 1rem;
+}
+
 /* menu dropdown */
 
  .dropdown {
