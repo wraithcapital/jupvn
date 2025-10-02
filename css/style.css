@@ -47,6 +47,8 @@
 /* Hover chỉ thay đổi nút (CON) */
 .dropbtn:hover {
   background-color: #222; /* Khi rê chuột đổi màu nút */
+  outline: none;      /* bỏ viền mặc định */
+  box-shadow: none;   /* bỏ bóng nếu có */
 }
 
 /*-------------------------------
