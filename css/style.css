@@ -16,9 +16,10 @@
 
 /* Thanh menu ngang */
 .navbar {
-  background-color: #ccc; /* nền xám nhạt */
+  background-color: #f7931A; /* nền xám nhạt */
   display: flex;          /* các menu cha nằm ngang */
-  justify-content: center; /* căn giữa toàn bộ thanh */
+  justify-content: flex-end; /* căn giữa toàn bộ thanh */
+  align-items: center;
   padding: 0.5rem 1rem;
   gap: 1rem;
 }
