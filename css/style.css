@@ -57,10 +57,14 @@
   }
 
   .dropdown-content a {
-    color: white;
-    padding: 10px 16px;
-    text-decoration: none;
-    display: block;
+  display: none;
+  position: absolute;
+  top: 100%;        /* nằm ngay dưới menu cha */
+  left: 0;          /* bắt đầu từ mép trái của menu cha */
+  background-color: #000;
+  min-width: 160px;
+  border: none;
+  z-index: 10;
   }
 
   .dropdown-content a:hover {
