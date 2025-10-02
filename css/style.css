@@ -16,7 +16,7 @@
 
 /* Thanh menu ngang */
 .navbar {
-  background-color: #f7931A; /* nền xám nhạt */
+  background-color: #f7931A; /* nền */
   display: flex;          /* các menu cha nằm ngang */
   justify-content: flex-end; /* căn giữa toàn bộ thanh */
   align-items: center;
@@ -33,7 +33,7 @@
 
  .dropbtn {
     font-family: inherit; /* kế thừa từ body */
-    background-color: #000;
+    background-color: none;
     color: white;
     padding: 10px 20px;
     font-size: 1rem;
