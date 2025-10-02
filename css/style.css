@@ -106,7 +106,7 @@ h2 {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
-  color: #ff6600;
+  color: ##f7931A;
   letter-spacing: normal;
 }
 
@@ -126,7 +126,7 @@ h2 {
 }
 
 .links a:hover {
-  color: #ff6600;
+  color: ##f7931A;
   text-decoration: none;
 }
 
@@ -140,7 +140,7 @@ p {
   display: inline-block;
   margin-bottom: 2rem;
   font-size: 1rem;
-  color: #ff6600;
+  color: ##f7931A;
   text-decoration: none;
 }
 
@@ -154,7 +154,7 @@ p {
 /*------------------------------------*/
 /* HIGHLIGHT TEXT */
 .highlight {
-  color: #ff6600;
+  color: ##f7931A;
   font-weight: normal;
 }
 
