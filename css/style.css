@@ -14,62 +14,76 @@
 
 /*------------------------------------*/
 
-/* Thanh menu ngang */
 .navbar {
-  background-color: #f7931A; /* nền */
-  display: flex;          /* các menu cha nằm ngang */
-  justify-content: flex-end; /* căn giữa toàn bộ thanh */
-  align-items: center;
-  padding: 0.5rem 1rem;
-  gap: 0.5rem;
+  background-color: #f7931A; /* Nền thanh menu */
+  display: flex;             /* Các menu cha nằm ngang */
+  justify-content: flex-end; /* Căn các menu cha sang phải */
+  align-items: center;       /* Căn giữa theo chiều dọc */
+  padding: 0.5rem 1rem;      /* Khoảng cách trong thanh */
+  gap: 0.5rem;               /* Khoảng cách giữa các menu cha */
 }
 
-/* menu dropdown */
+/*-------------------------------
+  2. DROPDOWN (CHA CHỨA NÚT & NỘI DUNG)
+---------------------------------*/
+.dropdown {
+  position: relative; /* Để dropdown-content nằm tương đối bên trong cha này */
+  display: inline-block; /* Cho dropdown hiển thị ngang với các menu khác */
+}
 
- .dropdown {
-    position: relative;
-    display: inline-block;
-  }
+/*-------------------------------
+  3. NÚT DROPDOWN (CON TRỰC TIẾP CỦA .dropdown)
+---------------------------------*/
+.dropbtn {
+  font-family: inherit;    /* Kế thừa font từ body */
+  background-color: #f7931A; /* Nền của nút */
+  color: white;             /* Màu chữ */
+  padding: 10px 20px;       /* Khoảng cách chữ trong nút */
+  font-size: 1rem;          /* Kích thước chữ */
+  border: none;             /* Bỏ viền */
+  cursor: pointer;          /* Con trỏ chuột dạng pointer */
+}
 
- .dropbtn {
-    font-family: inherit; /* kế thừa từ body */
-    background-color: #f7931A;
-    color: white;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-  }
+/* Hover chỉ thay đổi nút (CON) */
+.dropbtn:hover {
+  background-color: #222; /* Khi rê chuột đổi màu nút */
+}
 
-  .dropbtn:hover {
-    background-color: #222;
-  }
+/*-------------------------------
+  4. NỘI DUNG DROPDOWN (CON TRỰC TIẾP CỦA .dropdown)
+---------------------------------*/
+.dropdown-content {
+  display: none;          /* Ẩn mặc định */
+  position: absolute;     /* Vị trí tuyệt đối so với .dropdown (CHA) */
+  left: 100%;              /* Canh giữa theo chiều ngang so với cha */
+  transform: translateX(-50%); /* Dịch sang trái 50% để thực sự canh giữa */
+  background-color: none; /* Chưa có nền */
+  min-width: 160px;       /* Chiều rộng tối thiểu */
+  border: none;           /* Không có viền */
+  z-index: 10;            /* Luôn nằm trên các phần khác */
+}
 
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: none;
-    min-width: 160px;
-    border: none;
-    z-index: 10;
-  }
+/*-------------------------------
+  5. LIÊN KẾT TRONG DROPDOWN (CON CỦA .dropdown-content)
+---------------------------------*/
+.dropdown-content a {
+  color: white;           /* Màu chữ */
+  padding: 10px 16px;     /* Khoảng cách chữ trong link */
+  text-decoration: none;  /* Bỏ gạch chân */
+  display: block;         /* Chiếm nguyên dòng */
+}
 
-  .dropdown-content a {
-   color: white;
-    padding: 10px 16px;
-    text-decoration: none;
-    display: block;
-  }
+/* Hover chỉ đổi link, không ảnh hưởng khung cha */
+.dropdown-content a:hover {
+  background-color: none; /* Không đổi nền */
+}
 
-  .dropdown-content a:hover {
-    background-color: none;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+/*-------------------------------
+  6. HIỂN THỊ NỘI DUNG KHI RÊ CHUỘT VÀO CHA
+---------------------------------*/
+.dropdown:hover .dropdown-content {
+  display: block; /* Khi hover vào .dropdown (CHA), hiện nội dung (CON) */
+}
 
 /*------------------------------------*/
 /* BODY & BASE STYLES */
