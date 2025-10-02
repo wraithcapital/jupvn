@@ -19,7 +19,7 @@
   display: flex;             /* Các menu cha nằm ngang */
   justify-content: flex-end; /* Căn các menu cha sang phải */
   align-items: center;       /* Căn giữa theo chiều dọc */
-  padding: 0.5rem 1rem;      /* Khoảng cách trong thanh */
+  padding: 0.3rem 1rem;      /* Khoảng cách trong thanh */
   gap: 0.5rem;               /* Khoảng cách giữa các menu cha */
 }
 
