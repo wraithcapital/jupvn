@@ -32,7 +32,7 @@
 }
 
 /*-------------------------------
-  3. NÚT DROPDOWN (CON TRỰC TIẾP CỦA .dropdown)
+  3. NÚT DROPDOWN BUTTON (CON TRỰC TIẾP CỦA .dropdown)
 ---------------------------------*/
 .dropbtn {
   font-family: inherit;    /* Kế thừa font từ body */
@@ -78,6 +78,7 @@
 /* Hover chỉ đổi link, không ảnh hưởng khung cha */
 .dropdown-content a:hover {
   background-color: none; /* Không đổi nền */
+  color: #f7931A;
   outline: none;
   box-shadow: none;
 }
@@ -88,6 +89,7 @@
 ---------------------------------*/
 .dropdown:hover .dropdown-content {
   display: block; /* Khi hover vào .dropdown (CHA), hiện nội dung (CON) */
+  color: #f7931A;
 }
 
 /*------------------------------------*/
